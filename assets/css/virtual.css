@@ -1122,30 +1122,30 @@ a:hover, a:active {
 }
 
 .theme-red .fg-theme {
-    color: #EF3724 !important;
+    color: #2c96f9 !important;
 }
 
 .theme-red .btn-theme {
-    background-color: #EF3724;
+    background-color: #2c96f9;
     color: #fff;
 }
 
 .theme-red .btn-theme:hover {
-    background-color: #F04936;
+    background-color: #2c96f9;
     color: #fff;
 }
 
 .theme-red .btn-theme:focus {
-    box-shadow: 0 0 0 3px #fff, 0 0 0 5px #EF3724;
+    box-shadow: 0 0 0 3px #fff, 0 0 0 5px #2c96f9;
 }
 
 .theme-red .btn-theme-outline {
-    color: #EF3724;
-    box-shadow: 0 0 0 2px #EF3724;
+    color: #2c96f9;
+    box-shadow: 0 0 0 2px #2c96f9;
 }
 
 .theme-red .btn-theme-outline:hover {
-    background-color: #EF3724;
+    background-color: #2c96f9;
     color: #fff;
 }
 
@@ -1174,7 +1174,7 @@ a:hover, a:active {
 }
 
 .theme-red .theme-list li::before {
-    border-color: #EF3724;
+    border-color: #2c96f9;
 }
 
 
