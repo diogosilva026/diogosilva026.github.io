@@ -1113,9 +1113,9 @@ a:hover, a:active {
     background-color: #EF3724 !important;
 }
 
-.theme-red .fg-theme {
+/* .theme-red .fg-theme {
     color: #2c96f9 !important;
-}
+} */
 
 .theme-red .btn-theme {
     background-color: #2c96f9;

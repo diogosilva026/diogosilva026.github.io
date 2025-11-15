@@ -200,7 +200,10 @@
 }
 
 .timeline li .title {
-  width: 175px;
+  display: inline-block;
+  width: auto;
+  max-width: 100%;
+  white-space: nowrap;
   padding: 6px 20px;
   background-color: #747474;
   color: #fff;
@@ -211,20 +214,22 @@
 .timeline li .details {
   background-color: #f4f5f8;
   margin-top: 8px;
-  padding: 20px;
+  padding-top: 10px;
+  padding-left: 20px;
+  padding-right: 20px;
   border-radius: 4px;
 }
 
 .timeline li .details h5,
 .timeline li .details p {
-  margin-bottom: 0;
+    display: inline-block;
+  margin-bottom: 10px;
 }
 
 .timeline li .details small {
-  display: block;
+  display: inline-block;
   font-weight: 500;
   font-size: 14px;
-  margin-top: 5px;
   margin-bottom: 10px;
 }
 
