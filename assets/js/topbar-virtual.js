@@ -1,9 +1,14 @@
 $(function() {
-  var $grid = $('.gridder').isotope({
+  var $grid = $('.gridder');
+
+// Wait for images to load THEN apply Isotope
+$grid.imagesLoaded(function () {
+  $grid.isotope({
     itemSelector: '.grid-item',
     percentPosition: true
   });
-  
+});
+
   // filter items on button click
   $('.filterable-button').on( 'click', 'button', function() {
     var filterValue = $(this).attr('data-filter');
