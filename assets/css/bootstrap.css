@@ -1695,6 +1695,7 @@ pre code {
 
   .offset-lg-1 {
     margin-left: 8.333333%;
+    margin-top: 3%;
   }
 
   .offset-lg-2 {
@@ -9029,10 +9030,10 @@ button.bg-dark:focus {
   margin-right: 1rem !important;
 }
 
-.mb-3,
+/* .mb-3,
 .my-3 {
   margin-bottom: 1rem !important;
-}
+} */
 
 .ml-3,
 .mx-3 {
@@ -9211,10 +9212,10 @@ button.bg-dark:focus {
   padding: 3rem !important;
 }
 
-.pt-5,
+/* .pt-5,
 .py-5 {
   padding-top: 3rem !important;
-}
+} */
 
 .pr-5,
 .px-5 {
@@ -9223,7 +9224,7 @@ button.bg-dark:focus {
 
 .pb-5,
 .py-5 {
-  padding-bottom: 3rem !important;
+  padding-bottom: 1rem !important;
 }
 
 .pl-5,
