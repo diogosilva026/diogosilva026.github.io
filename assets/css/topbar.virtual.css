@@ -55,16 +55,51 @@
 .vg-page {
   position: relative;
   display: block;
-  padding: 40px 0;
+  scroll-margin-top: 80px;
+  /* padding: 45px 0; */
   width: 100%;
   overflow: hidden;
 }
 
-.page-home {  
-  padding: 25px 0;
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
   width: 100%;
-  height: 700px;
-  z-index: 99;
+  padding-top: 6px;
+  padding-bottom: 6px;
+  background-color: #343a40;
+  /* background-color: rgba(104, 102, 102, 0.8); */
+  z-index: 1000;
+}
+
+.navbar.floating {
+  top: 0;
+  background-color: #343a40;
+}
+
+.page-home .img-place {
+  width: 280px;
+  height: 350px;
+  background-color: #dfe0e6;
+  overflow: unset;
+}
+
+.page-home .img-place::before {
+  content: "";
+  position: absolute;
+  top: -20px;
+  right: -35px;
+  width: 100%;
+  height: 100%;
+  border: 5px solid #747474;
+  z-index: -1;
+}
+
+.page-home {
+  background-color: #fff;
+  padding-top: 130px;
+  width: 100%;
 }
 
 .page-home::before {
@@ -74,25 +109,10 @@
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(62, 57, 57, 0.8);
+  /* background-color: rgba(62, 57, 57, 0.8); */
   z-index: -1;
 }
 
-.page-home .navbar {
-  position: absolute;
-  top: auto;
-  left: 0;
-  width: 100%;
-  padding-top: 6px;
-  padding-bottom: 6px;
-  background-color: rgba(104, 102, 102, 0.8);
-  z-index: 99;
-}
-
-.page-home .navbar.floating {
-  top: 0;
-  background-color: #343a40;
-}
 
 .page-home .caption-header {
   position: relative;
@@ -137,7 +157,6 @@
   z-index: 10;
 }
 
-
 .page-about {
   background-color: #fff;
 }
@@ -158,6 +177,14 @@
   height: 100%;
   border: 5px solid #747474;
   z-index: -1;
+}
+
+.page-projects {
+  padding-bottom: 50px;
+}
+
+.page-projects h1 {
+  border-bottom: 2px solid black;
 }
 
 .timeline {

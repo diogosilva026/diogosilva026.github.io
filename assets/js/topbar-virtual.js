@@ -39,12 +39,12 @@ $(function () {
     }
   });
 
-  backTop.click(function () {
-    $('html').animate({
-      scrollTop: 0
-    }, 1000);
-    return false;
-  });
+  // backTop.click(function () {
+  //   $('html').animate({
+  //     scrollTop: 0
+  //   }, 1000);
+  //   return false;
+  // });
 
   $.fn.toggleSelected = function (options) {
     var defaults = $.extend({
@@ -69,7 +69,7 @@ $(function () {
 
 $(document).ready(function () {
 
-  /* Sticky nvigation */
+  /* Sticky navigation */
 
   var sticky = {
     $sticky: $('.sticky'),
@@ -94,7 +94,7 @@ $(document).ready(function () {
           href = $el.data('target') || $el.attr('href'),
           $href = /^#./.test(href) && $(href);
 
-        return $href && $href.length && $href.is(':visible') ? [[$href[0].getBoundingClientRect().top + windowTop, href]] : null;
+        return $href && $href.length && $href.is(':visible') ? [[$href[0].getBoundingClientRect().top + windowTop - 80, href]] : null;
       })
         .sort(function (a, b) { return a[0] - b[0] })
         .each(function () {
